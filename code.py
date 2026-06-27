@@ -18,7 +18,7 @@ ds18b20_sensors = [DS18X20(ow_bus, device) for device in devices]
 try:
     gas_sensor = adafruit_ccs811.CCS811(i2c, address=0x5A)
 except ValueError:
-    gas_sensor = adafruit_ccs811.CCS811(i2c, address=0x5B)
+    gas_sensor = adafruit_ccs811.CCS811(i2c, address=0x59)
 
 try:
     accelerometer = adafruit_adxl34x.ADXL345(i2c)
